@@ -5,7 +5,7 @@
     <title>Forms</title>
 </head>
 <body>
-<form>
+<form id="data">
     <div>
         <label for="name">Imię:</label>
         <input type="text" id="name">
@@ -20,16 +20,27 @@
     </div>
 
     <input type="submit" value="Dodaj">
-<br><br>
+    <br><br>
     <style> td { border: 1px solid black;  padding-right: 30px} </style>
-    <table id="my-Table">
+    <table>
+        <thead>
         <tr>
             <td>Imię</td><td>Nazwisko</td><td>Wiek</td><td>Usuń</td>
         </tr>
-        <br>
+        </thead>
+        <tbody id="my-Table"></tbody>
     </table>
+</form>
+<br>
+<br>
+<br>
+<form id="filter">
+    <div>
+        <label for="key">klucz</label>
+        <input type="text" placeholder="Imie Nazwisko" id="key">
+    </div>
+    <input type="submit" value="Filtruj">
 </form>
 <script src="script.js"></script>
 </body>
 </html>
-
